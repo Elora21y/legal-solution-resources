@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -47,25 +47,9 @@
 <body>
     <header class="lg:container mx-auto">
         <!-- navbar -->
-        <div class="navbar bg-base-100 poppins">
+        <div class="navbar bg-base-100 poppins flex justify-between  relative">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Cases</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
+                
                 <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt=""></a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -78,7 +62,24 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn bg-primary-color text-white">Free Consultation</a>
+                <a class="btn bg-primary-color text-white invisible md:visible">Free Consultation</a>
+            </div>
+            <div class="dropdown mr-7">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  mr-10  w-20 p-2 shadow text-sm">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
             </div>
         </div>
         <!-- banner -->
@@ -94,9 +95,10 @@
                         alteration in some form, by injected humour.
                     </p>
                     <div class="flex flex-col md:flex-row gap-5 ">
-                        <input type="text" placeholder="Search your Services" class="rounded-lg px-5 py-3 w-96">
+                        <input type="text" placeholder="Search your Services" class="rounded-lg px-5 py-3 md:w-96">
                         <button
-                            class="btn bg-primary-color text-white px-8 border-0 font-semibold md:text-xl poppins w-32 duration-[0.6s] hover:bg-white hover:text-gray-500">Search</button>
+                            class="btn bg-primary-color text-white px-8 border-0 font-semibold md:text-xl poppins w-32 duration-[0.6]
+                            hover:bg-white hover:text-gray-500 ">Search</button>
                     </div>
                 </div>
             </div>
@@ -252,8 +254,8 @@
             <!-- FAQ container -->
             <div class="hero ">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src="images/faq.png" class="max-w-sm md:max-w-lg rounded-lg" />
-                    <div class="space-y-5">
+                    <img src="images/faq.png" class="md:max-w-lg rounded-lg" />
+                    <div class="space-y-5 w-5/6">
                         <div class="collapse collapse-plus bg-base-200 p-1 md:p-5">
                             <input type="radio" name="my-accordion-3" checked="checked" />
                             <div class="collapse-title text-xl md:text-2xl font-bold text-stone-700">1. Are application fee waivers
